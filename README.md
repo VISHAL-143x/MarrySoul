@@ -1,3 +1,5 @@
+# Live Demo https://marry-soul.vercel.app/
+
 # Quick start
 1. git clone https://github.com/VISHAL-143x/MarrySoul; /https://github.com/shabbiryk/MarrySoul
 2. Copy  a .env file  `>cp -a env.example  .env` and fill with your own parameters.
