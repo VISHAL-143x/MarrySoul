@@ -6,7 +6,7 @@
 3. Get an NFT.Storage API key https://nft.storage/ and add this to the .env
 4. Add your rinkeby blockchain server api and url to the .env file (ive used alchemy here, though moralis & infura are also awesome)
 5. Install packages `>npm install`
-6. Deploy the solidity contract to the rinkeby testnet using hardhat `>npx hardhat run scripts/deploy.js --network rinkeby`
+6. Deploy the solidity contract to the rinkeby testnet using hardhat '>npx hardhat run scripts/deploy.js --network rinkeby`
 7. Add your contract address to the .env file
 8. Run your front end in dev mode `>npm start` OR deploy with Fleek https://fleek.co/
 
@@ -71,11 +71,11 @@ MarrySoul is a permissionless soulbound token issuance/attestation protocol that
 
 We decided to take it further and launch it on mainnet and L2  with a better design and complete implementation, which
 
-\1) enables people to revoke their SBT;
+1) enables people to revoke their SBT;
 
-\2) enable people to search, issue, and attest with **ENS** integration;
+2) enable people to search, issue, and attest with **ENS** integration;
 
-\3) link to various DID services like Proof of Humanity and brightID.
+3) link to various DID services like Proof of Humanity and brightID.
 
 
 
