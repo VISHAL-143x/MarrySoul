@@ -8,7 +8,7 @@ Project name - MarrySoul
 4. npm install
 5. npm start
 6. Go to http://localhost:3000/
-6. Recorded video demo of the integration - 
+6. Recorded video demo of the integration - https://www.loom.com/share/7ccbae89d9094f159324900cc1ef8498
 7. Person of contact in case there are any questions - Vishal Pachpor (Email - vishalpatil080502@gmail.com )
 8. Discord ID - vishalpatil01#5005
 9. UnstoppableDomain registered account email address - vishalpatil080502@gmail.com
