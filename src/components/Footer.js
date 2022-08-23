@@ -7,7 +7,7 @@ const Footer = (props) => {
       <img alt="Twitter Logo" className="twitter-logo" src={twitterLogo} />
       <a
         className="footer-text"
-        href="https://twitter.com/shabbiryk"
+        href="https://twitter.com/vishalP01113336"
         target="_blank"
         rel="noreferrer"
       >

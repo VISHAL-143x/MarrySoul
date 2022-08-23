@@ -1,4 +1,22 @@
 # Quick start
+Project name - MarrySoul
+1. Link to working code in a public repo - Steps to check the Unstoppable Domain integration -
+2. Clone the Repo
+3. cd MarrySoul
+4. npm install
+5. npm start
+6. Go to http://localhost:3000/
+6. Recorded video demo of the integration - 
+7. Person of contact in case there are any questions - Vishal Pachpor (Email - vishalpatil080502@gmail.com )
+8. Discord ID - vishalpatil01#5005
+9. UnstoppableDomain registered account email address - vishalpatil080502@gmail.com
+10. Code where UnstoppableDomain is used - 
+
+
+
+
+
+# Quick start
 1. git clone https://github.com/VISHAL-143x/MarrySoul; /https://github.com/shabbiryk/MarrySoul
 2. Copy  a .env file  `>cp -a env.example  .env` and fill with your own parameters.
 3. Get an NFT.Storage API key https://nft.storage/ and add this to the .env

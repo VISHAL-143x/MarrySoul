@@ -59,13 +59,33 @@
   background: -webkit-linear-gradient(left, #60c657, #35aee2);
   background-size: 200% 200%;
   animation: gradient-animation 4s ease infinite;
+  
 }
 
 .connect-to-wallet-button {
   background: -webkit-linear-gradient(left, #fff985, #ff84fd);
   background-size: 200% 200%;
   animation: gradient-animation 4s ease infinite;
+
+  
 }
+
+.UDomain {
+  background: -webkit-linear-gradient(left, #fff985, #ff84fd);
+  background-size: 200% 200%;
+  animation: gradient-animation 4s ease infinite;
+  color: white;
+  height: 3rem;
+  width: 210px;
+  border-radius: 5px;
+  margin-left: 20px;
+  font-size:large;
+  font-weight: 100;
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  cursor: pointer;
+}
+  
+
 
 .connect-wallet-button-disabled {
   /* background: -webkit-linear-gradient(left, #60c657, #35aee2); */
