@@ -7,7 +7,12 @@ import UDomain from "./UDomain";
 const Layout = (props) => {
   return (
     <div className="App">
+      <div className="UDOM">
+        <UDomain className="UDOM" />
+      </div>
+
       <div className="container">
+       
         <div className="header-menu-container">
           <a href="https://twitter.com/vishalP01113336" target="_blank" rel="noreferrer">
 
@@ -23,6 +28,7 @@ const Layout = (props) => {
           >
             {props.connected ? "Connect to Wallet" : "Connected"}
           </button>
+             
 
         </div>
         <div className="header-container">
