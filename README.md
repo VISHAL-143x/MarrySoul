@@ -2,7 +2,7 @@
 
 # Quick start
 Project name - MarrySoul
-1. Link to working code in a public repo - Steps to check the Unstoppable Domain integration -
+1. Link to working code in a public repo - Steps to check the Unstoppable Domain integration - https://marry-soul.vercel.app/
 2. Clone the Repo
 3. cd MarrySoul
 4. npm install
