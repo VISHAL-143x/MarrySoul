@@ -17,7 +17,6 @@ function UDomain() {
             const authorization = await uauth.loginWithPopup()
             setUauth(JSON.parse(JSON.stringify(authorization))["idToken"])
 
-            // eslint-disable-next-line no-undef
             await authenticate()
         } catch (error) {
             console.error(error)
@@ -25,8 +24,8 @@ function UDomain() {
     }
 
     async function logOut() {
-        uauth.logout()
-        logOut()
+       await uauth.logout()
+       setUauth(null)
     }
 
     function log() {
