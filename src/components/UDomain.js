@@ -4,7 +4,7 @@ import { Button } from "react-bootstrap"
 
 const uauth = new UAuth({
     clientID: "25253022-ca91-45b4-9691-02bcd4a876e2",
-    redirectUri: "http://localhost:3000",
+redirectUri: "https://marry-soul.vercel.app/",
 })
 
 function UDomain() {
