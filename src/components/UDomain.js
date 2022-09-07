@@ -3,8 +3,10 @@ import UAuth from "@uauth/js"
 import { Button } from "react-bootstrap"
 
 const uauth = new UAuth({
-    clientID: "25253022-ca91-45b4-9691-02bcd4a876e2",
-redirectUri: "https://marry-soul.vercel.app/",
+     clientID: "25253022-ca91-45b4-9691-02bcd4a876e2",
+  redirectUri: "https://marry-soul.vercel.app/",
+  scope: "openid wallet"
+
 })
 
 function UDomain() {
