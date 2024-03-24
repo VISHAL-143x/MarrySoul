@@ -109,9 +109,13 @@ const MintNFTInput = ({...props}) => {
           placeholder="Select Type"
           onChange={(e) => setSelectEventID(e.target.value)
           }>
-            <option>Marriage
+            <option>College Degree
             </option>
-            <option>Citizenship
+            <option>Resume
+            </option> 
+            <option>Marksheet
+            </option> 
+            <option>Academic Achievements
             </option> 
           </select> &nbsp;
           <Checkbox

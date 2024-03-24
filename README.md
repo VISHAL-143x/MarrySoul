@@ -22,9 +22,9 @@ Project name - MarrySoul
 1. git clone https://github.com/VISHAL-143x/MarrySoul; /https://github.com/shabbiryk/MarrySoul
 2. Copy  a .env file  `>cp -a env.example  .env` and fill with your own parameters.
 3. Get an NFT.Storage API key https://nft.storage/ and add this to the .env
-4. Add your rinkeby blockchain server api and url to the .env file (ive used alchemy here, though moralis & infura are also awesome)
+4. Add your sepolia blockchain server api and url to the .env file (ive used alchemy here, though moralis & infura are also awesome)
 5. Install packages `>npm install`
-6. Deploy the solidity contract to the rinkeby testnet using hardhat '>npx hardhat run scripts/deploy.js --network rinkeby`
+6. Deploy the solidity contract to the sepolia testnet using hardhat '>npx hardhat run scripts/deploy.js --network sepolia`
 7. Add your contract address to the .env file
 8. Run your front end in dev mode `>npm start` OR deploy with Fleek https://fleek.co/
 
@@ -59,9 +59,9 @@ Write run.js and test your contract
 
 Sign up for etherscan / get an API key & add it to hardhat.config
 networks: {
-rinkeby: {
-url: process.env.MORALIS_RINKEBY_API_URL,
-accounts: [process.env.METAMASK_RINKEBY_PRIVATE_KEY],
+sepolia: {
+url: process.env.MORALIS_SEPOLIA_API_URL,
+accounts: [process.env.METAMASK_SEPOLIA_PRIVATE_KEY],
 },
 },
 etherscan: {
@@ -74,7 +74,7 @@ apiKey: process.env.ETHERSCAN_API_KEY,
 - Read the IPFS best practice guide for NFT's https://docs.ipfs.io/how-to/mint-nfts-with-ipfs/#a-short-introduction-to-nfts
 - See the NFT.School guide https://nftschool.dev/
 - Public Gateway status checker: https://ipfs.github.io/public-gateway-checker/
-- Faucets for rinkeby eth: https://faucets.chain.link/rinkeby
+- Faucets for sepolia eth: https://faucets.chain.link/sepolia
 
 
 

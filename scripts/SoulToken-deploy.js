@@ -3,7 +3,7 @@ const main = async () => {
       "SoulToken"
     );
     // 0x91D5F7696CdAf23e1B74dE75FC4de605178c05Cc
-    // deployed on rinkeby 5-26
+    // deployed on sepolia 5-26
     const nftContract = await nftContractFactory.deploy(0);
     await nftContract.deployed();
     console.log("Contract deployed to:", nftContract.address);
@@ -29,5 +29,5 @@ const main = async () => {
   
   runMain();
 
-  // npx hardhat run scripts/SoulToken-deploy.js --network rinkeby 
+  // npx hardhat run scripts/SoulToken-deploy.js --network sepolia
   

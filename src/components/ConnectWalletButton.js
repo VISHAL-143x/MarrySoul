@@ -1,6 +1,6 @@
 
 import React from "react"
-import UDomain from "./UDomain";
+
 
 const ConnectWalletButton = ({connectWallet, ...props}) => {
   return (
@@ -12,7 +12,6 @@ const ConnectWalletButton = ({connectWallet, ...props}) => {
     Connect to Wallet
   </button>, 
   
-  <UDomain/>
     </>
   )
 }

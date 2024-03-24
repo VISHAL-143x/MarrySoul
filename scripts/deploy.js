@@ -1,29 +1,26 @@
+const { ethers } = require("hardhat");
+
 const main = async () => {
-  const nftContractFactory = await hre.ethers.getContractFactory(
-    "SoulToken"
-  );
-  // 0xFCA6c8f824a651d86a1738515F25065A83458e9e
-  const nftContract = await nftContractFactory.deploy();
-  await nftContract.deployed();
-  console.log("Contract deployed to:", nftContract.address);
+  // Get the contract factory for SoulToken
+  const SoulTokenFactory = await ethers.getContractFactory("SoulToken");
 
-  // Call the function.
-  // let txn = await nftContract.mintMyNFT(
-  //   "ipfs://bafyreiah6nfc5ht2rifpnwuqssq6mkxhtjurrrcgnn7ms42d755edt7nqy/metadata.json"
-  //   // "https://bafybeiggaxhjtplbrn26mox5npfd7rif3wt43h4oy55q5wfzyonmmrcqty.ipfs.dweb.link/nft.json"
-  // );
-  // // Wait for it to be mined.
-  // await txn.wait();
+  // Define the fee in wei (0.001 ether in wei)
+  const feeInWei = ethers.utils.parseEther("0.001");
+
+  // Deploy the contract with the specified fee
+  const soulToken = await SoulTokenFactory.deploy(feeInWei);
+
+  // Wait for the contract to be deployed
+  await soulToken.deployed();
+
+  // Log the address where the contract is deployed
+  console.log("SoulToken deployed to:", soulToken.address);
 };
 
-const runMain = async () => {
-  try {
-    await main();
-    process.exit(0);
-  } catch (error) {
-    console.log(error);
+// Execute the main function
+main()
+  .then(() => process.exit(0))
+  .catch((error) => {
+    console.error(error);
     process.exit(1);
-  }
-};
-
-runMain();
+  });

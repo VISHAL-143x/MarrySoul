@@ -1,20 +1,17 @@
-import React, { useState, useEffect } from "react";
+import React from "react";
 import Header from "./Header";
 import Footer from "./Footer";
-import UDomain from "./UDomain";
+
 
 
 const Layout = (props) => {
   return (
     <div className="App">
-      <div className="UDOM">
-        <UDomain className="UDOM" />
-      </div>
 
       <div className="container">
        
         <div className="header-menu-container">
-          <a href="https://twitter.com/vishalP01113336" target="_blank" rel="noreferrer">
+          <a href="https://twitter.com/0xvishalpatil" target="_blank" rel="noreferrer">
 
           </a>
           <button
