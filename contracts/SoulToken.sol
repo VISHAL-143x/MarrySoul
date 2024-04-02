@@ -44,9 +44,16 @@ contract SoulToken is ERC721URIStorage, Ownable, ReentrancyGuard {
 
     uint256 public fee;
 
-    constructor(uint256 _fee) ERC721("MarrySoul", "MSO") {
+//     modifier _isApprovedOrOwner {
+//     require(msg.sender == owner, "Ownable: You are not the owner, Bye.");
+//     _;
+//   }
+
+
+    constructor(uint256 _fee) ERC721("MarrySoul", "MSO") Ownable(msg.sender) {
         fee = _fee;
-    }
+    }    
+    
 
     function sendRequest(
         address _party,
@@ -180,19 +187,27 @@ contract SoulToken is ERC721URIStorage, Ownable, ReentrancyGuard {
         address from,
         address to,
         uint256 startTokenId
-    ) internal override {
+    ) internal {
         if (to == address(0)) {
-            super._beforeTokenTransfer(from, to, startTokenId);
+            _beforeTokenTransfer(from, to, startTokenId);
         } else {
             require(from == address(0), "Cannot transfer soul bond token");
-            super._beforeTokenTransfer(from, to, startTokenId);
+            _beforeTokenTransfer(from, to, startTokenId);
         }
     }
 
-    function burn(uint256 tokenId) external {
-        require(_isApprovedOrOwner(_msgSender(), tokenId), "Caller is not owner nor approved");
-        _burn(tokenId);
-    }
+
+//     function burn(uint256 tokenId) external {
+//         require(_isApprovedOrOwner(_msgSender(), tokenId), "Caller is not owner nor approved");
+//         _burn(tokenId);
+//     }
+
+//     function _isApprovedOrOwner(address spender, uint256 tokenId) internal view returns (bool) 
+//     {
+//     return (ownerOf(tokenId) == spender || getApproved(tokenId) == spender || isApprovedForAll(ownerOf(tokenId), spender));
+// }
+
+
 
 
      function getproposeIdByAddr(address _addr) external view returns (bytes32[] memory){

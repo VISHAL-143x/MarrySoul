@@ -7,11 +7,11 @@ const Footer = (props) => {
       <img alt="Twitter Logo" className="twitter-logo" src={twitterLogo} />
       <a
         className="footer-text"
-        href="https://twitter.com/vishalP01113336"
+        href="https://twitter.com/"
         target="_blank"
         rel="noreferrer"
       >
-        MarrySoul
+        AcademicNFT
       </a>
     </div>
   );

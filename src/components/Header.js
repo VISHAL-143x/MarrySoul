@@ -4,23 +4,16 @@ import BasicLogo from "../assets/nfthack-logo.svg";
 const Header = () => {
   return (
     <>
-      <a
-        href="https://github.com/shabbiryk"
-        target="_blank"
-        rel="noreferrer"
-      >
-        <img
-          alt="Logo"
-          style={{ height: "150px" }}
-          src={BasicLogo}
-        ></img>
-      </a>
-      <p className="header gradient-text">Welcome to  MarrySoul! </p>
+     
+        <img alt="Logo" style={{ height: "150px" }} src={BasicLogo}></img>
+      <p className="header gradient-text">Welcome to AcademicNFT! </p>
       <p className="sub-text gradient-text">
-        MSO is a permissionless soulbound token issuing/attesting(minting) protocol. <br />
-        You’re welcome to issue souldbound token to your lover, friends and community to show your love!
+        AcademicNFT is a permissionless soulbound token issuing/attesting(minting)
+        protocol. <br />
+         You’re welcome to issue souldbound certification token to friends and
+        community 
       </p>
-      <div id='hackNotify'></div>
+      <div id="hackNotify"></div>
     </>
   );
 };
